@@ -8,7 +8,7 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(funcs.miroir("123456789",5),"1234554321")
         self.assertEqual(funcs.miroir("a",2),"")
         self.assertEqual(funcs.miroir(" ",10)," ")
-        self.assertEqual(funcs.miroir("",10)," ")
+        self.assertEqual(funcs.miroir("",10),"")
 
 
 if __name__ == '__main__':
