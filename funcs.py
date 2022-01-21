@@ -5,7 +5,7 @@ def deriveeSeconde(floatListe):
     for i in floatListe:
         if type(i) != float:
             return [0.0]
-    if(floatListe == [] or len(floatListe) < 4):
+    if(floatListe == [] or len(floatListe) < 3):
         return [0.0]
     for i in range(len(floatListe)-1):
         tab.append((floatListe[i+1]-floatListe[i])/temp)
