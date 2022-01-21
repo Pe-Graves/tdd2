@@ -35,4 +35,14 @@ Exercice 2 : Derivee
   - return une liste = [0.0] dans le cas, où le type d'un élément de la liste est différent de float
   - return une liste = [0.0] dans le cas, où le nombre d'éléments de la liste d'entrée est inférieur à 2
   - return une liste = [0.0] dans le cas, où la liste en entrée est vide
-  - on prendre un interval de temps régulier égal à 2 
+  - on prend un interval de temps régulier égal à 2 
+
+Exercice 3 : Derivee Seconde
+
+- Implementer une fonction qui prend en paramètre une liste de float et calcule sa dérivée seconde, on considèrera que les échantillons sont tous pris à interval de temps régulier
+
+  Dans cette fonction :
+  - return une liste = [0.0] dans le cas, où le type d'un élément de la liste est différent de float,
+  - return une liste = [0.0] dans le cas, où le nombre d'éléments de la liste est inférieur à 3
+  - return une liste = [0.0] dans le cas, où la liste en entrée est vide,
+  - on prend un interval de temps régulier égal à 2
