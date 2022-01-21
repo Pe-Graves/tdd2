@@ -1,3 +1,3 @@
-def deriveeSeconde(fonction, ordre, point):
+def approximation(fonction, ordre, point):
     return -1
 
