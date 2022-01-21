@@ -1,11 +1,12 @@
-def miroir(mot,indice):
-    res = ""
-    if mot == "":
-        return ""
-    if mot == " ":
-        return " "
-    if len(mot) <= indice:
-        return ""
-    for i in range(indice,-1,-1):
-        res = res + mot[i]
-    return mot[:indice+1] + res
+def derivee(floatListe):
+    tab = []
+    temp = 2 # interval de temps régulier
+    for i in floatListe:
+        if type(i) != float:
+            return [0.0]
+    if(floatListe == [] or len(floatListe) < 2):
+        return [0.0]
+    for i in range(len(floatListe)-1):
+        tab.append((floatListe[i+1]-floatListe[i])/temp)
+    return tab
+
