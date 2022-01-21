@@ -46,3 +46,15 @@ Exercice 3 : Derivee Seconde
   - return une liste = [0.0] dans le cas, où le nombre d'éléments de la liste est inférieur à 3
   - return une liste = [0.0] dans le cas, où la liste en entrée est vide,
   - on prend un interval de temps régulier égal à 2
+
+
+Exercice 4 : Approximation de la dérivée d'une fonction
+
+- Implémenter une fonction qui prend en paramètre la dérivée d'une fonction, un ordre de grandeur défini ainsi que un point et qui calculera l'approximation de la dérivée de cette fonction en ce point
+
+  Dans cette fonction : 
+  - return 0 si l'ordre de grandeur vaut 0
+  - ne prend pas en compte l'ordre l'odre de grandeur dans le résultat si ce dernier est supérieur à 1 ou inférieur à 0
+  - l'ordre de grandeur défini doit être compris entre 0 et 1 avec 0 et 1 exclus
+  - si le point défini est 0, la fonction renvoie 0 pour éviter les divisions par 0 --> cas qui pourrait être amélioré
+  - il y a trois fonctions dans le fichier funcs.py, on pourrait en implémenter d'autres 
