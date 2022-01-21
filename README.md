@@ -26,3 +26,13 @@ Exercice 1 : Miroir
   - return un string vide, si on a un string vide en entrée
   - return un string vide, si l'indice >= à la longueur de la chaîne
   - return un string avec un espace, si on donne un string avec un espace en entrée
+
+Exercice 2 : Derivee
+
+- Implémenter une fonction qui prend en paramètre une liste de float et calcule sa dérivée, on considérera que les échantillons sont pris à interval de temps régulier
+
+  Dans cette fonction : 
+  - return une liste = [0.0] dans le cas, où le type d'un élément de la liste est différent de float
+  - return une liste = [0.0] dans le cas, où le nombre d'éléments de la liste d'entrée est inférieur à 2
+  - return une liste = [0.0] dans le cas, où la liste en entrée est vide
+  - on prendre un interval de temps régulier égal à 2 
