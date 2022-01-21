@@ -3,13 +3,16 @@ import unittest
 
 class TestFuncs(unittest.TestCase):
     
-    def testMirroir(self):
-        self.assertEqual(funcs.miroir("azerty",3),"azerreza")
-        self.assertEqual(funcs.miroir("123456789",5),"123456654321")
-        self.assertEqual(funcs.miroir("a",2),"")
-        self.assertEqual(funcs.miroir(" ",10)," ")
-        self.assertEqual(funcs.miroir("",10),"")
-        self.assertEqual(funcs.miroir("&",0),"&&")
+    def testDerivee(self):
+        self.assertEqual(funcs.derivee([2.0,1.0,4.0,3.0]),[-0.5,1.5,-0.5])
+        self.assertEqual(funcs.derivee([]),[0.0])
+        self.assertEqual(funcs.derivee([2.0,2.0,1.0]),[0.0,-0.5])
+        self.assertEqual(funcs.derivee([0.0]),[0.0])
+        self.assertEqual(funcs.derivee([0.0,0.0]),[0.0])
+        self.assertEqual(funcs.derivee([0.0,1.0]),[0.5])
+        self.assertEqual(funcs.derivee(["a","b","d","zd"]),[0.0])
+        self.assertEqual(funcs.derivee([1,2,3,4,4]),[0.0])
+        self.assertEqual(funcs.derivee(['a','b','m']),[0.0])
 
 
 
