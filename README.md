@@ -53,8 +53,9 @@ Exercice 4 : Approximation de la dérivée d'une fonction
 - Implémenter une fonction qui prend en paramètre la dérivée d'une fonction, un ordre de grandeur défini ainsi que un point et qui calculera l'approximation de la dérivée de cette fonction en ce point
 
   Dans cette fonction : 
-  - return 0 si l'ordre de grandeur vaut 0
-  - ne prend pas en compte l'ordre l'odre de grandeur dans le résultat si ce dernier est supérieur à 1 ou inférieur à 0
+  - return 0 si l'ordre de grandeur est inférieur à 0, si ce n'est pas un float
+  - return 0 si l'ordre ne vaut pas 0.1, 0.01, 0.001 etc ...
+  - ne prend pas en compte l'ordre de grandeur dans le résultat si ce dernier est supérieur à 1
   - l'ordre de grandeur défini doit être compris entre 0 et 1 avec 0 et 1 exclus
   - si le point défini est 0, la fonction renvoie 0 pour éviter les divisions par 0 --> cas qui pourrait être amélioré
   - il y a trois fonctions dans le fichier funcs.py, on pourrait en implémenter d'autres 
