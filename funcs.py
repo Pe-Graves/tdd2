@@ -5,12 +5,14 @@ def fonction2(x):
     return 3*x
 
 def fonction3(x):
+    if x == 0:
+        return 0
     return 1/x
 
 
 def approximation(fonction, ordre, point):
 
-    if type(ordre) != float or type(point) != float or ordre <= 0.0 or point == 0.0:
+    if type(ordre) != float or type(point) != float or ordre <= 0.0:
         return 0
 
     if ordre >= 1.0:
@@ -22,7 +24,7 @@ def approximation(fonction, ordre, point):
     if ordre_inverse%10 != 0:
         return 0
 
-    if ordre > 0.0 and ordre < 1.0 and point != 0.0:
+    if ordre > 0.0 and ordre < 1.0:
         res = fonction(point)
         multi_ordre = 1/ordre
         res *= multi_ordre
