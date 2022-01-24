@@ -25,7 +25,6 @@ Exercice 1 : Miroir
   Dans cette fonction : 
   - return un string vide, si on a un string vide en entrée
   - return un string vide, si l'indice >= à la longueur de la chaîne
-  - return un string avec un espace, si on donne un string avec un espace en entrée
 
 Exercice 2 : Derivee
 
