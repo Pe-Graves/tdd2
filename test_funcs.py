@@ -10,6 +10,13 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(funcs.miroir(" ",10)," ")
         self.assertEqual(funcs.miroir("",10),"")
         self.assertEqual(funcs.miroir("&",0),"&&")
+        self.assertEqual(funcs.miroir('a',0),'aa')
+
+        self.assertEqual(funcs.miroir(123,0),"")
+        self.assertEqual(funcs.miroir(1.2,0),"")
+        self.assertEqual(funcs.miroir(True,0),"")
+        self.assertEqual(funcs.miroir(False,0),"")
+
 
 
 
