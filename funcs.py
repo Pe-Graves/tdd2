@@ -1,10 +1,6 @@
 def miroir(mot,indice):
     res = ""
-    if mot == "":
-        return ""
-    if mot == " ":
-        return " "
-    if len(mot) <= indice:
+    if mot == "" or mot == " " or type(mot) != str or len(mot) <= indice:
         return ""
     for i in range(indice,-1,-1):
         res = res + mot[i]
