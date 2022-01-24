@@ -11,6 +11,9 @@ def deriveeSeconde(floatListe):
         tab.append((floatListe[i+1]-floatListe[i])/temp)
     if(tab == [] or len(tab) < 2):
         return [0.0]
+    for i in floatListe:
+        if type(i) != float:
+            return [0.0]
     for j in range(len(tab)-1):
         res.append((tab[j+1]-tab[j])/temp)
     return res
