@@ -1,5 +1,6 @@
 import funcs
 import unittest
+import math
 
 class TestFuncs(unittest.TestCase):
     
@@ -60,6 +61,19 @@ class TestFuncs(unittest.TestCase):
         self.assertEqual(funcs.approximation(funcs.fonction2,-1.23,'1'),0)
         self.assertEqual(funcs.approximation(funcs.fonction3,-1.23,'1'),0)
 
+        #Fonction trigonométrique sin et cos 
+
+        self.assertEqual(funcs.approximation(funcs.fonction4,0.001,math.pi/2),1.0)
+        self.assertEqual(funcs.approximation(funcs.fonction5,0.001,math.pi/2),0.0)
+        self.assertEqual(funcs.approximation(funcs.fonction4,0.001,math.pi),0.0)
+        self.assertEqual(funcs.approximation(funcs.fonction5,0.001,math.pi),-1.0)
+        self.assertEqual(funcs.approximation(funcs.fonction4,0.001,0.0),0.0)
+        self.assertEqual(funcs.approximation(funcs.fonction5,0.001,0.0),1.0)
+
+        self.assertEqual(funcs.approximation(funcs.fonction4,-1.23,'1'),0)
+        self.assertEqual(funcs.approximation(funcs.fonction5,-1.23,'1'),0)
+        self.assertEqual(funcs.approximation(funcs.fonction4,'-1.23',1),0)
+        self.assertEqual(funcs.approximation(funcs.fonction5,'-1.23',1),0)
 
 if __name__ == '__main__':
 	unittest.main()
