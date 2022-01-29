@@ -56,5 +56,6 @@ Exercice 4 : Approximation de la dérivée d'une fonction
   - return 0 si l'ordre ne vaut pas 0.1, 0.01, 0.001 etc ...
   - ne prend pas en compte l'ordre de grandeur dans le résultat si ce dernier est supérieur à 1
   - l'ordre de grandeur défini doit être compris entre 0 et 1 avec 0 et 1 exclus
-  - si le point défini est 0, la fonction renvoie 0 pour éviter les divisions par 0 --> cas qui pourrait être amélioré
-  - il y a trois fonctions dans le fichier funcs.py, on pourrait en implémenter d'autres 
+  - si le point défini est 0, la fonction renvoie 0 pour éviter les divisions par 0 
+  - il y a 5 fonctions dans le fichier, 3 sont des polynomes et 2 sont des fonctions trigonométriques --> on pourrait en rajouter
+    plus 
