@@ -1,4 +1,8 @@
-def fonction1(x):
+import math
+
+from pytest import approx
+
+def fonction1(x):  
     return 5*x**2
 
 def fonction2(x):
@@ -8,6 +12,12 @@ def fonction3(x):
     if x == 0:
         return 0
     return 1/x
+
+def fonction4(x):
+    return math.sin(x)
+
+def fonction5(x):
+    return math.cos(x)
 
 
 def approximation(fonction, ordre, point):
@@ -31,6 +41,7 @@ def approximation(fonction, ordre, point):
         res = int(res)
         return res*ordre
     
+
     
 
     
